@@ -77,7 +77,7 @@ class Hangman {
     generateStatusDOM() {
         let message = ''
         if (this.status === 'playing') {
-            message = `Guesses left: ${this.attemptsRemaining}`
+            message = `Guesses left: ${this.attemptsRemaining}. Please choose a letter.`
         } else if (this.status === 'failed') {
             const fullWord = this.word.join('')
             message = `Game over! The word was "${fullWord}"`
