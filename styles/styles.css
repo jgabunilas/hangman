@@ -1,0 +1,78 @@
+/* This is a style rule, which defines how we want to style our document
+The first piece is the selector (*), which allows us to target various elements of the page. It is similar to how we have used document.querySelector. (*) is the universal select or which selects everything on the page */
+/* Let's customize the selector to target to be more specific. */
+/* this line is an OR logic, and will apply to anything that has an ID of puzzle or is a button */
+/* #puzzle, button { 
+        color: red;
+} */
+
+/* Let's target the reset button, setting its color to white and the background to red */
+/* We can also use the .class method to target any elements of a given class */
+
+/* .warning {
+        color: white;
+        background: red;
+} */
+
+/* Andrew's styles */
+
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+   }
+   
+    html {
+        font-size: 62.5%;
+   }
+   
+    body {
+        background: #2B292E;
+        color: #fafafa;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+   }
+   
+    span {
+        border-bottom: 1px solid #534f59;
+        display: inline-block;
+        font-size: 2rem;
+        height: 2.4rem;
+        line-height: 2.4rem;
+        margin: 0 .1rem;
+        text-align: center;
+        text-transform: uppercase;
+        width: 2.4rem;
+   }
+   
+    p {
+        font-weight: 300;
+        margin-bottom: .8rem;
+   }
+   
+    .puzzle {
+        display: flex;
+        margin-bottom: 4.8rem;
+   }
+   
+    .button {
+        background: #7044a0;
+        border: none;
+        border-bottom: 2px solid #603a88;
+        cursor: pointer;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding: .8rem;
+        transition: background .3s ease, color .3s ease;
+   }
+   
+   /* Make this baby darker when we hover the mouse over it */
+    .button:hover {
+        background: #5F3A87;
+   }
+
