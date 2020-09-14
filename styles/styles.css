@@ -76,3 +76,9 @@ The first piece is the selector (*), which allows us to target various elements 
         background: #5F3A87;
    }
 
+   #picture {
+        padding: 25px;
+        text-align: center;
+        height: 20%;
+   }
+

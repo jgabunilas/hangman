@@ -100,6 +100,24 @@ class Hangman {
         }
         return this.status
     }
+    // The updatePicture method will change the source of the picture div based on how many guesses are remaining. This is accomplished by setting the source attribute of the div DOM element to the appropriate picture.
+    updatePicture() {
+        if (this.attemptsRemaining === 6) {
+            img.setAttribute('src', 'images/hangman6guesses.png')
+        } else if (this.attemptsRemaining === 5) {
+            img.setAttribute('src', 'images/hangman5guesses.png')
+        } else if (this.attemptsRemaining === 4) {
+            img.setAttribute('src', 'images/hangman4guesses.png')
+        } else if (this.attemptsRemaining === 3) {
+            img.setAttribute('src', 'images/hangman3guesses.png')
+        } else if (this.attemptsRemaining === 2) {
+            img.setAttribute('src', 'images/hangman2guesses.png')
+        } else if (this.attemptsRemaining === 1) {
+            img.setAttribute('src', 'images/hangman1guesses.png')
+        } else if (this.attemptsRemaining === 0) {
+            img.setAttribute('src', 'images/hangman0guesses.png')
+        }                            
+    }
     // getStatus() {
     //     if (!this.getPuzzle().includes('*')) {
     //         this.status = 'finished'
